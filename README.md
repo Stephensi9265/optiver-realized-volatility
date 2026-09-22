@@ -24,16 +24,3 @@ $$\text{RMSPE} = \sqrt{\frac{1}{n} \sum_{i=1}^{n} \left(\frac{y_i - \hat{y}_i}{y
 | :--- | :---: | :---: | :---: |
 | **Naive Historical Baseline** | — | 0.33750 | — |
 | **LightGBM Ensemble (5-Fold GKF)** | **0.23151** | **0.23107** | **+31.5%** |
-
----
-
-## Repository Structure
-
-```text
-├── src/
-│   ├── features.py       # Polars feature extraction for book & trade data
-│   └── train.py          # GroupKFold LightGBM training & RMSPE evaluation
-├── notebooks/
-│   └── pipeline.ipynb    # Kaggle-ready execution notebook
-├── requirements.txt      # Environment dependencies
-└── README.md
